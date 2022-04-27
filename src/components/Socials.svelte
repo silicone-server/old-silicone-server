@@ -10,7 +10,7 @@
 	</div>
 
 	<div class="button">
-		<a href="https://discord.gg/aBTkpvdZAU">
+		<a href="https://github.com/silicone-server/silicone-server">
 			<img src="/images/github.svg" width="32" alt="github"/>
 		</a>
 	</div>
