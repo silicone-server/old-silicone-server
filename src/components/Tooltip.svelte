@@ -1,0 +1,43 @@
+<!-- thanks https://svelte.dev/repl/dd6754a2ad0547c5b1c1ea37c0293fef?version=3.47.0 -->
+
+<script>
+	export let title = '';
+	let isHovered = false;
+	let x;
+	let y;
+	
+	function mouseOver(event) {
+		isHovered = true;
+		x = event.pageX + 5;
+		y = event.pageY + 5;
+	}
+	function mouseMove(event) {
+		x = event.pageX + 5;
+		y = event.pageY + 5;
+	}
+	function mouseLeave() {
+		isHovered = false;
+	}
+</script>
+
+<div
+	on:mouseover={mouseOver}
+	on:mouseleave={mouseLeave}
+	on:mousemove={mouseMove}
+	on:focus={mouseOver	}
+>
+	<slot />
+</div>
+{#if isHovered}
+	<div style="top: {y}px; left: {x}px;" class="tooltip">{title}</div>
+{/if}
+<style>
+	.tooltip {
+		border: 1px solid #111;
+		background: white;
+		border-radius: 4px;
+		background-color: #222;
+		padding: 4px;
+		position: absolute;
+	}
+</style>
