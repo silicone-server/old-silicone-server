@@ -6,6 +6,7 @@
 	import Connect from "./components/Connect.svelte";
 	import Socials from "./components/Socials.svelte";
 	import Boxes from "./components/Boxes.svelte";
+	import Gads from "./components/Gads.svelte";
 
 	if (type == "discord") {
 		location.href = "https://discord.gg/aBTkpvdZAU";
@@ -13,6 +14,7 @@
 </script>
 
 <main>
+	<Gads />
 	<Header/>
 	<Connect/>
 	<h1>silicone-server.xyz</h1>
