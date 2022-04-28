@@ -1,5 +1,7 @@
-[![https://docs.github.com/assets/cb-16881/images/help/repository/archive-repository.png]
+![archived](https://docs.github.com/assets/cb-16881/images/help/repository/archive-repository.png)
+
 THIS REPOSITORY IS ARCHIVED. PLEASE REFER TO silicone-server INSTEAD OF THIS REPO 
+
 > NOW CONTINUING READ ME
 # old-silicone-server
 
